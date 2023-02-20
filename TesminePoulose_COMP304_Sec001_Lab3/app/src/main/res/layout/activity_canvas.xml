@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="27dp"
+        android:text="Line thickness : " />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="24dp"
+        android:layout_toRightOf="@id/textView2" />
+
+
+    <TextView
+        android:id="@+id/clrtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_marginTop="42dp"
+        android:text="Line Color" />
+
+    <RadioGroup
+        android:id="@+id/color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="42dp"
+        android:layout_toRightOf="@id/clrtxt"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="redline"
+            android:text="Red"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/yellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="yellowline"
+            android:text="Yellow"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/cyan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cyan"
+            android:onClick="cyan"
+            android:textSize="14sp" />
+
+
+    </RadioGroup>
+
+
+    <RelativeLayout
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="185dp"
+        android:layout_marginRight="4dp">
+
+        <TextView
+            android:id="@+id/arrw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="38dp"
+            android:text="Arrows : " />
+
+        <Button
+            android:id="@+id/up"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/arrw"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/ic_keyboard_arrow_up_black_24dp"
+            android:onClick="drawup" />
+
+        <Button
+            android:id="@+id/down"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/arrw"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="81dp"
+            android:background="@drawable/ic_keyboard_arrow_down_black_24dp"
+            android:onClick="drawdown" />
+
+        <Button
+            android:id="@+id/left"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/arrw"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="43dp"
+            android:background="@drawable/ic_keyboard_arrow_left_black_24dp"
+            android:onClick="drawleft" />
+
+
+        <Button
+            android:id="@+id/right"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/arrw"
+            android:layout_marginLeft="88dp"
+            android:layout_marginTop="43dp"
+            android:background="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:onClick="drawright" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/color"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"></TextView>
+
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:layout_marginTop="-23dp"
+        android:onClick="clearall"
+        android:text="Clear" />
+
+    <TextView
+        android:id="@+id/help"
+        android:layout_width="135dp"
+        android:layout_height="34dp"
+        android:layout_below="@id/textView3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="-19dp"
+        android:layout_marginEnd="91dp"
+        android:layout_toRightOf="@id/button3"
+        android:text="TextView" />
+
+    <RelativeLayout
+        android:layout_width="397dp"
+        android:layout_height="489dp"
+        android:layout_below="@id/textView3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp">
+
+        <ImageView
+            android:id="@+id/ImageViewForDrawing"
+            android:layout_width="wrap_content"
+            android:layout_height="477dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginRight="20px"
+            android:layout_marginBottom="7dp"
+            android:minWidth="300px"
+            android:minHeight="300px">
+        </ImageView>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

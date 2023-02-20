@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#B4E6E1"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:overScrollMode="always"
+        android:background="@drawable/rockbackground1"
+        tools:context=".Rock">
+
+        <TextView
+            android:id="@+id/textSelectSong"
+            android:layout_width="367dp"
+            android:layout_height="wrap_content"
+            android:text="Select Song"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxSong1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="Song 1"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:src="@drawable/rrock1" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxSong2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="Song 2"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:src="@drawable/rrock2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:id="@+id/textView2"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxSong3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="Song 3"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:src="@drawable/rrock3" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:id="@+id/textView3"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/btnselectNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="onClickNext"
+            android:text="Next" />
+
+        <TextView
+            android:id="@+id/error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+    </LinearLayout>
+</ScrollView>

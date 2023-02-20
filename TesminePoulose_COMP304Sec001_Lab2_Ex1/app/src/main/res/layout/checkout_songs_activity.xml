@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#B4E6E1"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:overScrollMode="always"
+        android:background="@drawable/checkout"
+        tools:context=".Checkout_songs">
+
+        <TextView
+            android:id="@+id/songType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple_700"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/error"
+            android:editable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textFontWeight="500"
+            android:textColor="@color/purple_200"
+            android:textAlignment="center"
+            android:background="@null"
+
+            />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/purple_200"
+            android:orientation="vertical" />
+
+        <Button
+            android:id="@+id/z"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="onClickCheckout"
+            android:layout_marginTop="30dp"
+            android:text="Checkout"
+            tools:ignore="UsingOnClickInXml" />
+
+    </LinearLayout>
+</ScrollView>
