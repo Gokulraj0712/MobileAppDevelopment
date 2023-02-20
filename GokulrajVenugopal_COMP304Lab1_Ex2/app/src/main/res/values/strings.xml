@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Lab 1 Ex 2</string>
+    <string name="lifecycle_start">Life Cycle Methods:</string>
+    <string name="activity_onCreate">onCreate of MainActivityExecuted</string>
+    <string name="activity_onStart">onStart of MainActivityExecuted</string>
+    <string name="activity_onStop">onStop of MainActivityExecuted</string>
+    <string name="bottom_fragment_onCreateView">BottomFragment onCreateView executed</string>
+    <string name="bottom_fragment_onViewCreated">BottomFragment onViewCreated executed</string>
+    <string name="bottom_fragment_start">BottomFragment onStart executed</string>
+    <string name="bottom_fragment_onpause">BottomFragment onPause executed</string>
+    <string name="bottom_fragment_onResume">BottomFragment onResumeexecuted</string>
+    <string name="ai_activity_header">AIActivity:</string>
+    <string name="ar_activity_header">ARActivity:</string>
+    <string name="on_create_executed">onCreate Executed</string>
+    <string name="on_start_executed">onStart Executed</string>
+    <string name="on_pause_executed">onPause of MainActivityExecuted</string>
+    <string name="on_stop_executed">onStop Executed</string>
+    <string name="on_destroy_executed">onDestroy Executed</string>
+
+</resources>
