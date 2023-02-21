@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#E80C1632"
+    android:id="@+id/relativeLayout"
+    android:layout_height="match_parent"
+    tools:context=".UserType">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="293dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/covid_vax_img2"
+        tools:srcCompat="@drawable/covid_vax_img2" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="199dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="20dp"
+        android:text="Please select the user type :"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/imageView2"
+        app:layout_constraintTop_toBottomOf="@id/imageView2" />
+
+    <Button
+        android:id="@+id/visitor"
+        android:layout_width="186dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="Visitor"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/textView8"
+        app:layout_constraintTop_toBottomOf="@id/textView8" />
+
+    <Button
+        android:id="@+id/business"
+        android:layout_width="186dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:text="Business"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/visitor"
+        app:layout_constraintTop_toBottomOf="@id/visitor"
+        tools:layout_editor_absoluteX="112dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

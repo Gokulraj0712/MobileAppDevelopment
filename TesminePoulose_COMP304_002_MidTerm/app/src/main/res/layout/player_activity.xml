@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewwelcome"
+        android:layout_width="331dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="41dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="299dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="59dp"
+        android:text="SAVE SOCCER PLAYER NAME"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="192dp"
+        android:text="SAVE BASKETBALL PLAYER NAME"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="367dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="9dp"
+        android:ems="10"
+        android:hint="Enter your favorite Soccer player name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="371dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:hint="Enter your favorite Basktball player"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

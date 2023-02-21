@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E80C1632"
+    android:textAlignment="center"
+    tools:context=".MainMenuActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Vac_Check.PopupOverlay">
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="316dp"
+        android:backgroundTint="#FFFFFF"
+        app:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        app:layout_constraintVertical_bias="0.928"
+        app:srcCompat="@drawable/application_exit" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_main_menu"
+        android:layout_width="421dp"
+        android:layout_height="299dp"
+        android:background="#D64A4A"
+        app:circularflow_defaultRadius="100dp"
+        app:circularflow_radiusInDP="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="414dp"
+        android:layout_height="53dp"
+        android:background="#020313"
+        android:foregroundTint="#EDE5E5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/Theme.Vac_Check.PopupOverlay"
+        app:subtitleTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:titleTextColor="#F3EFEF"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/btn_Login"
+        android:layout_width="308dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="147dp"
+        android:backgroundTint="#F8F9FB"
+        android:backgroundTintMode="src_atop"
+        android:ellipsize="start"
+        android:paddingLeft="75dp"
+        android:text=" Login"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textDirection="firstStrongRtl"
+
+        android:textSize="20sp"
+        android:textStyle="normal"
+
+        app:cornerRadius="20dp"
+        app:icon="@drawable/ic_baseline_person_24"
+        app:iconPadding="10dp"
+        app:iconSize="35dp"
+        app:iconTint="#121111"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <Button
+        android:id="@+id/btn_Register"
+        android:layout_width="308dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="147dp"
+        android:backgroundTint="#F8F9FB"
+        android:backgroundTintMode="src_atop"
+        android:ellipsize="start"
+        android:paddingLeft="75dp"
+        android:text="Register"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textDirection="firstStrongRtl"
+
+        android:textSize="20sp"
+        android:textStyle="normal"
+
+        app:cornerRadius="20dp"
+        app:icon="@drawable/ic_baseline_person_add_24"
+        app:iconPadding="10dp"
+        app:iconSize="35dp"
+        app:iconTint="#121111"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

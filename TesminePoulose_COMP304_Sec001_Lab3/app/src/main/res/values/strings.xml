@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TesminePoulose_COMP304_Sec001_Lab3</string>
+    <string name="demoExe">Select Exercises to demonstrate:</string>
+    <string-array name="exercisesList">
+        <item>Exercise 01</item>
+        <item>Exercise 02</item>
+    </string-array>
+    <string name="help">Use key down or right to draw</string>
+</resources>
