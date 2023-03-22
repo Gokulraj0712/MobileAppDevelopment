@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">GokulrajVenugopal_COMP304Lab3</string>
+    <string-array name="exercisesList">
+        <item>Exercise 01</item>
+        <item>Exercise 02</item>
+        <item>Exercise 03</item>
+    </string-array>
+    <string name="help">Use key down or right to draw</string>
+    <string name="line_thickness">Line thickness :</string>
+    <string name="line_color">Line Color</string>
+    <string name="red">Red</string>
+    <string name="yellow">Yellow</string>
+    <string name="cyan">Cyan</string>
+    <string name="arrow_keys">Arrow Keys</string>
+    <string name="clear_canvas">Clear Canvas</string>
+    <string name="textview">TextView</string>
+    <string name="select_exercises_to_demonstrate">Select Exercises to demonstrate:</string>
+</resources>

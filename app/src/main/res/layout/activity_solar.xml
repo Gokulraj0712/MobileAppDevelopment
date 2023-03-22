@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/space_bg">
+
+    <ImageView
+        android:id="@+id/sunImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/sun"/>
+
+    <ImageView
+        android:id="@+id/earthImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_toLeftOf="@+id/sunImageView"
+        android:layout_alignBottom="@+id/sunImageView"
+        android:src="@drawable/earth"/>
+
+</RelativeLayout>
