@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/music">
+
+    <TextView
+        android:id="@+id/textSelectSong"
+        android:layout_width="316dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="215dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="454dp"
+        android:background="#000000"
+        android:fontFamily="@font/acme"
+        android:text="CHOOSE YOUR"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/white"
+        android:textFontWeight="50"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radiogrp"
+        android:layout_width="147dp"
+        android:layout_height="249dp"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="94dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnnext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSelectSong">
+
+        <RadioButton
+            android:id="@+id/radiorock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo"
+            android:text="Rock"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp" />
+
+        <RadioButton
+            android:id="@+id/radiopop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo"
+            android:text="Pop"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp" />
+
+        <RadioButton
+            android:id="@+id/radiojazz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo"
+            android:text="Jazz"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp" />
+
+        <RadioButton
+            android:id="@+id/radiohip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo"
+            android:text="Hip-Hop"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp" />
+
+        <RadioButton
+            android:id="@+id/radioclassical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo"
+            android:text="Classical"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnnext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="318dp"
+        android:background="@android:color/black"
+        android:text="Next"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toEndOf="@+id/radiogrp"
+        app:layout_constraintTop_toBottomOf="@+id/textSelectSong" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

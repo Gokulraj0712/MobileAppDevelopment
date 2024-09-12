@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="90dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="88dp"
+        android:text="Name:"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="162dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/txtName"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/txtValue"
+        android:layout_width="85dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="144dp"
+        android:text="Price:"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextValue"
+        android:layout_width="163dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/txtValue"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="112dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="13dp"
+        android:text="Insert"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnDelete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDeleteName" />
+
+    <TextView
+        android:id="@+id/txtDeleteName"
+        android:layout_width="85dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="200dp"
+        android:text="Delete Name:"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextDeleteName"
+        android:layout_width="161dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/txtDeleteName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextValue"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="111dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="111dp"
+        android:text="Delete"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnInsert"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDeleteName" />
+
+    <TextView
+        android:id="@+id/textViewDisplay"
+        android:layout_width="150dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="137dp"
+        android:layout_marginEnd="137dp"
+        android:layout_marginBottom="141dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="65dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="10dp"
+        android:text="Watchlist"
+        android:textColor="@color/teal_200"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDisplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

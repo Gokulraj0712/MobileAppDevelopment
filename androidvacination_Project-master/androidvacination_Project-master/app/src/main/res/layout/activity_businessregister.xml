@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E80C1632"
+    tools:context=".BusinessRegisterActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="293dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/covid_vax_img2"
+        tools:srcCompat="@drawable/covid_vax_img2"/>
+
+
+    <EditText
+        android:id="@+id/BusinessRegisterUserName"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="#3C4E5C"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textColorHint="#B0BEC5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@id/ContactNumberb"
+        app:layout_constraintTop_toBottomOf="@+id/ContactNumberb" />
+
+    <EditText
+        android:id="@+id/BusinessRegisterPassword"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="#3C4E5C"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="#B0BEC5"
+        app:layout_constraintLeft_toLeftOf="@id/BusinessRegisterUserName"
+        app:layout_constraintStart_toStartOf="@id/BusinessRegisterUserName"
+        app:layout_constraintTop_toBottomOf="@id/BusinessRegisterUserName" />
+
+    <Button
+        android:id="@+id/BusinessRegisterButton"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#ECEDF3"
+        android:hint="REGISTER"
+        android:textColor="@color/black"
+        android:textColorHint="#0A1125"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/BusinessRegisterPassword"
+        app:layout_constraintTop_toBottomOf="@id/BusinessRegisterPassword" />
+
+    <EditText
+        android:id="@+id/nb"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="#3C4E5C"
+        android:ems="10"
+        android:hint="Name of Business"
+        android:inputType="textPersonName"
+        android:textColorHint="#B0BEC5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView"  />
+
+    <EditText
+        android:id="@+id/Address"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="#3C4E5C"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="textPersonName"
+        android:textColorHint="#B0BEC5"
+        app:layout_constraintStart_toStartOf="@id/nb"
+        app:layout_constraintTop_toBottomOf="@id/nb" />
+
+    <EditText
+        android:id="@+id/ContactNumberb"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="#3C4E5C"
+        android:ems="10"
+        android:hint="Contact Number"
+        android:inputType="textPersonName"
+        android:textColorHint="#B0BEC5"
+        app:layout_constraintStart_toStartOf="@id/Address"
+        app:layout_constraintTop_toBottomOf="@id/Address"  />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

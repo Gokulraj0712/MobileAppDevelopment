@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Covid Pre-Screening App</string>
+    <string name="title_activity_main_menu">MainMenuActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Vaccine Checker</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_get_qr">Get QR Code</string>
+    <string name="SelfScreening">Self-Screening</string>
+    <string name="logout">Logout</string>
+    <string name="personaldetails">Personal Details</string>
+    <string name="menu_find_vax">Find Vaccination Centre</string>
+    <string name="google_map_key">AIzaSyCIPFZu5ASflRzFdt9Hgqq0T6FipL08heU</string>
+    <string name ="ScreeningTitle"> Please answer the following Screening Questions below: </string>
+    <string name="screen1" />
+    <string name="question1">Do you experience any symptoms of COVID-19?</string>
+    <string name="question2">In the last 14 days, Have you tested positive for COVID-19?</string>
+    <string name="question3">Did you had close contact(six feet or less without a mask for more than 15 minutes) with a
+    confirmed COVID-19 case?</string>
+    <string name="question4"> Have you traveled outside Canada to one of the restricted countries listed on the
+    Government of Canada travel advisory?</string>
+    <string name="question5"> I hereby declare that all information inputted above is true and take responsibility
+        for any false declarations.</string>
+
+    <string name="RbTextYes">Yes</string>
+    <string name="RbTextNo">No</string>
+    <string-array name="usertype">
+        <item>Visitor</item>
+        <item>Business</item>
+    </string-array>
+
+
+    Places.initialize(getApplicationContext(),AIzaSyDFo5MMawi7WMMOdr1hdMobRUQipiP81qk);
+</resources>
